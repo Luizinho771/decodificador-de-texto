@@ -1,0 +1,21 @@
+
+
+:root {
+    --primary-color: #FFD1E3;
+    --secondary-color: #A367B1;
+    --tertiary-color: #5D3587;
+    --quaternary-color: #392467;
+    --text-color: white;
+
+    --title-font: ;
+    --normal-font: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+}
