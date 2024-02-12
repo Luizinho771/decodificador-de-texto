@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
     --primary-color: #FFD1E3;
@@ -8,7 +8,7 @@
     --text-color: white;
 
     --title-font: ;
-    --normal-font: ;
+    --normal-font: 'Inter', sans-serif;
 }
 
 * {
@@ -16,6 +16,100 @@
     padding: 0;
 }
 
-body{
+body {
+    height: 100vh;
     background-color: var(--primary-color);
+    box-sizing: border-box;
+    font-family: var(--normal-font);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flexstarts;
+    gap: 5%;
+}
+
+
+.main_textInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 5% 0px 0px 15%;
+
+}
+
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border: none;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    background-color: var(--primary-color);
+    font-family: var(--normal-font);
+    font-size: 2rem;
+}
+
+.main_textInput_warning{
+    display: flex;
+    align-items: baseline;
+    padding: 0 0 16px 0;
+}
+
+.main_textInput_warning_message_icon{
+    width: 24px;
+    height: auto;
+}
+
+.main_textInput_warning_message{
+    display: inline;
+}
+
+.main_textInput_buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 24px;
+    text-align: center;
+}
+
+.main_textInput_buttons_cripto {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 50%;
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.main_textInput_buttons_decripto {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 50%;
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+.main_textOutput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: var(--secondary-color);
+    margin: 40px 40px 0px 0px;
+    border-radius: 32px;
+}
+
+.main_textOutput_img {
+    width: 50%;
+    height: auto;
 }
