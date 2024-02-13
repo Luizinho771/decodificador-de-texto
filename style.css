@@ -5,9 +5,10 @@
     --secondary-color: #A367B1;
     --tertiary-color: #5D3587;
     --quaternary-color: #392467;
+    --button-color: #de9eec;
     --text-color: white;
 
-    --title-font: ;
+    --title-font: 'Inter', sans-serif;
     --normal-font: 'Inter', sans-serif;
 }
 
@@ -17,7 +18,7 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--primary-color);
     box-sizing: border-box;
     font-family: var(--normal-font);
@@ -26,8 +27,10 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: flexstarts;
-    gap: 5%;
+    justify-content: space-evenly;
+
+    gap: 2%;
+    padding: 5%;
 }
 
 
@@ -36,8 +39,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    padding: 5% 0px 0px 15%;
-
 }
 
 textarea {
@@ -48,23 +49,21 @@ textarea {
     overflow: auto;
     outline: none;
     background-color: var(--primary-color);
+    color: var(--quaternary-color);
     font-family: var(--normal-font);
     font-size: 2rem;
 }
 
-.main_textInput_warning{
+.main_textInput_warning {
     display: flex;
-    align-items: baseline;
     padding: 0 0 16px 0;
+    gap: 8px;
+
 }
 
-.main_textInput_warning_message_icon{
-    width: 24px;
+.main_textInput_warning_message_icon {
+    width: 20px;
     height: auto;
-}
-
-.main_textInput_warning_message{
-    display: inline;
 }
 
 .main_textInput_buttons {
@@ -75,41 +74,51 @@ textarea {
     text-align: center;
 }
 
-.main_textInput_buttons_cripto {
-    padding: 1.5rem;
-    border-radius: 1.5rem;
+.main_textInput_buttons_action {
+    padding: 24px;
+    border-radius: 24px;
     width: 50%;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
 
 }
 
-.main_textInput_buttons_decripto {
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    width: 50%;
+.main_textInput_buttons_action:hover {
     background-color: var(--tertiary-color);
-    color: var(--text-color);
-    font-size: 16px;
-    text-decoration: none;
+
 }
-
-
 
 .main_textOutput {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 2%;
     width: 30%;
-    background-color: var(--secondary-color);
-    margin: 40px 40px 0px 0px;
+    background-color: white;
     border-radius: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0px 10px 25px grey;
 }
 
 .main_textOutput_img {
     width: 50%;
     height: auto;
+}
+
+.main_textOutput_title {
+    font-family: var(--normal-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.main_textOutput_text {
+    font-family: var(--normal-font);
+    font-size: 1rem;
+    padding: 0% 2% 0% 2%;
 }
