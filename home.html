@@ -20,12 +20,12 @@
             </p>
 
             <div class="main_textInput_buttons">
-                <a href="https://LinkedIn.com/in/luizpaulo771" class="main_textInput_buttons_action">
+                <button onclick="criptografar()" id="btn-criptografar" class="main_textInput_buttons_action">
                     Criptogtafar
-                </a>
-                <a href="https://LinkedIn.com/in/luizpaulo771" class="main_textInput_buttons_action">
+                </button>
+                <button onclick="descriptografar()" id="btn-descriptografar" class="main_textInput_buttons_action">
                     Descriptografar
-                </a>
+                </button>
             </div>
         </section>
 
@@ -34,14 +34,14 @@
             <p class="main_textOutput_title">
                 Nenhuma mensagem encontrada
             </p>
-            <p class="main_textOutput_text">
+            <label id="text-output" class="main_textOutput_text">
                 Digite o texto que você deseja criptografar ou Descriptografar
-            </p>
+            </label>
         </section>
     </main>
 
     <footer></footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
