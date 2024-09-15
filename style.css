@@ -107,14 +107,17 @@ textarea {
 }
 
 .main_textOutput_img {
-    width: 50%;
+    width: 80%;
     height: auto;
+    border-radius: 15%;
+    display: none;
 }
 
 .main_textOutput_title {
     font-family: var(--normal-font);
     font-weight: 700;
     font-size: 1.5rem;
+    display: none;
 }
 
 .main_textOutput_text {
