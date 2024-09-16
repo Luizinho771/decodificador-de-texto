@@ -117,7 +117,6 @@ textarea {
     font-family: var(--normal-font);
     font-weight: 700;
     font-size: 1.5rem;
-    display: none;
 }
 
 .main_textOutput_text {
