@@ -44,10 +44,11 @@ main {
 textarea {
     padding: 10px;
     line-height: 1.5;
-    border: none;
     resize: none;
     overflow: auto;
     outline: none;
+    border-radius: 32px;
+    border-style: dashed;
     background-color: var(--primary-color);
     color: var(--quaternary-color);
     font-family: var(--normal-font);
@@ -99,7 +100,7 @@ textarea {
     align-items: center;
     text-align: center;
     gap: 2%;
-    width: 30%;
+    width: 30%;;
     background-color: white;
     border-radius: 32px;
     border: none;
@@ -117,10 +118,38 @@ textarea {
     font-family: var(--normal-font);
     font-weight: 700;
     font-size: 1.5rem;
+    margin: 2%;
 }
 
 .main_textOutput_text {
     font-family: var(--normal-font);
     font-size: 1rem;
-    padding: 0% 2% 0% 2%;
+    padding: 2%;
+    overflow: auto;    
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .main_textInput {
+        width: 100%;
+    }
+
+    .main_textOutput {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main_textOutput_text {
+        width: 90%;
+    }
+
+    .main_textOutput_img {
+        margin: 5%;
+    }
 }

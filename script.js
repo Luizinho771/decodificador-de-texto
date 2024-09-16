@@ -5,8 +5,8 @@ function criptografar() {
     let text = document.getElementById("secretMessage").value;
     //console.log(text);
     if (text != "") {
-        document.getElementById("text-output").innerHTML = cipher(text);
-        document.getElementById("textOutputTitle").innerHTML = "Texto Criptografado:";
+        document.getElementById("text-output").textContent = cipher(text);
+        document.getElementById("textOutputTitle").textContent = "Texto Criptografado:";
         document.getElementById("textOutputTitle").style.display = "initial";
         document.getElementById("main_textOutput_img").style.display = "none";
     }
@@ -19,8 +19,8 @@ function criptografar() {
 function descriptografar() {
     let text = document.getElementById("secretMessage").value;
     if (text != "") {
-        document.getElementById("text-output").innerHTML = decipher(text);
-        document.getElementById("textOutputTitle").innerHTML = "Texto Descriptografado:";
+        document.getElementById("text-output").textContent = decipher(text);
+        document.getElementById("textOutputTitle").textContent = "Texto Descriptografado:";
         document.getElementById("textOutputTitle").style.display = "initial";
         document.getElementById("main_textOutput_img").style.display = "none";
     }
@@ -66,8 +66,8 @@ function decipher(text) {
 }
 
 function noInput() {
-    document.getElementById("textOutputTitle").innerHTML = "Nenhuma mensagem encontrada";
+    document.getElementById("textOutputTitle").textContent = "Nenhuma mensagem encontrada";
     document.getElementById("main_textOutput_img").style.display = "initial";
-    document.getElementById("text-output").innerHTML = "Digite o texto que você deseja criptografar ou Descriptografar";
+    document.getElementById("text-output").textContent = "";
 
 }
